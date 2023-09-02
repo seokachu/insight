@@ -72,6 +72,9 @@ header{
                     display: block;
                     text-indent: -9999em;
                     background: url(../images/logo-beyond-insight.png) no-repeat;
+                    h1{
+                        height: inherit;
+                    }
                 }
             }
             .search{

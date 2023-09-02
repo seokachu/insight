@@ -454,6 +454,9 @@ header .header-inner .logo-search .logo a {
   text-indent: -9999em;
   background: url(../images/logo-beyond-insight.png) no-repeat;
 }
+header .header-inner .logo-search .logo a h1 {
+  height: inherit;
+}
 header .header-inner .logo-search .search {
   width: 520px;
   position: relative;
