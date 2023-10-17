@@ -5,6 +5,9 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -373,4 +376,180 @@ button {
 
 em {
   font-style: normal;
+}
+
+/* Bootstrap Font Icon */
+/* google Web fonts */
+@font-face {
+  font-family: "SpoqaHanSansNeo-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* responsive for tablet */
+@media (max-width: 1024px) {
+  /*--------------- Common CSS ---------------*/
+  section:not(.front-slider) {
+    padding: 30px 10px;
+  }
+  [class*=inner] {
+    width: 100% !important;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  /*--------------- HEADER ---------------*/
+  header .header-inner {
+    padding: 0 20px;
+  }
+  header .header-inner .logo-search {
+    gap: 5px;
+    justify-content: space-between;
+  }
+  header .header-inner .logo-search .login-register-buttons {
+    font-size: 13px;
+    padding: 5px;
+    margin-left: 0;
+  }
+  header .header-inner .logo-search .search {
+    width: 350px;
+  }
+  header .header-inner .logo-search .search input[type=text] {
+    padding: 11px;
+    text-indent: 10px;
+  }
+  header .mega-navi .mega-navi-inner {
+    padding: 22px 10px 28px;
+  }
+  /*######### Front page : index.html #########*/
+  /* Section : front Slider */
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap {
+    width: 100%;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc {
+    margin: 0 30px;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .desc h1 {
+    font-size: 1.8em;
+    white-space: nowrap;
+    line-height: 1.4em;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .pic {
+    overflow: hidden;
+  }
+  .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .pic img {
+    height: 250px;
+    transform: translateX(-10px);
+  }
+  /* Section : category-shortcut */
+  .category-shortcut .category-shortcut-inner .category-shortcut-inner-item .category-shortcut-inner-items a {
+    justify-content: flex-start;
+    padding-top: 20px;
+    gap: 15px;
+  }
+  .category-shortcut .category-shortcut-inner .category-shortcut-inner-item .category-shortcut-inner-items a span {
+    text-align: center;
+    line-height: 1.2em;
+  }
+  /* Section : focus-class */
+  .focus-class .focus-class-inner .focus-class-content .focus-class-items .focus-class-item .overview .class-price {
+    font-size: 13px;
+  }
+  /* Section : best-class */
+  .best-class .best-class-inner .best-class-content .best-class-wrap {
+    flex-direction: column-reverse;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .invite-banner {
+    display: none;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .invite-banner-tablet {
+    display: block;
+    text-align: center;
+    background-color: #aae8f3;
+    border-radius: 10px;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .bast-class-items-outer .bast-class-item .overview {
+    margin-top: 0;
+  }
+  .best-class .best-class-inner .best-class-content .best-class-wrap .bast-class-items-outer .bast-class-item .overview .class-price {
+    margin-top: 0;
+    font-size: 0.9em;
+    word-spacing: 0;
+  }
+  /* Section : early-bird */
+  .early-bird .early-bird-inner .early-bird-banner {
+    padding: 20px;
+  }
+  .early-bird .early-bird-inner .early-bird-banner .banner-about {
+    font-size: 1.6em;
+    line-height: 1.4em;
+  }
+  /* Section : blog */
+  .blog .blog-inner .blog-content .blog-items .blog-item .thum {
+    height: 160px;
+  }
+  /* Section : slogan */
+  .slogan .slogan-inner .slogan-content h1 {
+    font-size: 1.5em;
+  }
+  .slogan .slogan-inner .slogan-content span {
+    font-size: 1.3em;
+  }
+  /* Section : tip-tech */
+  .tip-tech .tip-tech-inner .tip-tech-content .tip-tech-wrap .tip-tech-items .tip-tech-item .thum {
+    display: none;
+  }
+  /* Footer */
+  .footer .footer-inner .lnb-wrap {
+    gap: 10px;
+  }
+  .footer .footer-inner .copyright-wrap address ul {
+    flex-wrap: wrap;
+  }
+  .footer .footer-inner .copyright-wrap address ul li {
+    white-space: nowrap;
+  }
+  /*######### Category Main : category-main.html #########*/
+  .category-class .cotegory-class-inner .category-class-detail .category-shortcut-btn-group .btn-shortcut {
+    margin: 0 3px 10px 0;
+  }
+  /*######### Category Main : Take course & Cart: take-course.html #########*/
+  .take-course .take-course-inner {
+    flex-direction: column;
+  }
+  /*######### Class Detail : class-detail.html #########*/
+  .class-detail-img .class-detail-img-inner {
+    height: 350px;
+  }
+  .class-detail-img .class-detail-img-inner .heading {
+    margin-left: 20px;
+  }
+  .class-detail-img .class-detail-img-inner .heading h1 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+  }
+  .class-detail-img .class-detail-img-inner .heading p {
+    font-size: 1em;
+  }
+  .class-detail-img .class-detail-img-inner .cover-img img {
+    height: 250px;
+  }
+  .class-datail-desc .class-datail-desc-inner .class-datail-desc-content {
+    flex-direction: column-reverse;
+  }
+  .class-datail-desc .class-datail-desc-inner .class-datail-desc-content .detail-info .class-detail-nav {
+    top: 115px;
+  }
+  .class-datail-desc .class-datail-desc-inner .class-datail-desc-content .detail-info .class-introduce * img {
+    width: 100%;
+  }
+  .class-datail-desc .class-datail-desc-inner .class-datail-desc-content .class-detail-slidebar {
+    position: static;
+  }
+  .class-datail-desc .class-datail-desc-inner .class-datail-desc-content .class-detail-slidebar .class-required-info .class-detail-sidebar-wrap .overview .class-price {
+    justify-content: flex-end;
+    gap: 20px;
+  }
+  .class-datail-desc .class-datail-desc-inner .class-datail-desc-content .class-detail-slidebar .class-required-info .class-detail-sidebar-wrap .overview .class-installment .installment-info {
+    margin-left: 13px;
+  }
 }

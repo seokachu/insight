@@ -1,0 +1,318 @@
+@import "reset", "variables", "fonts";
+
+/* responsive for tablet */
+@media (max-width:1024px){
+
+    /*--------------- Common CSS ---------------*/
+    section:not(.front-slider){
+        padding: 30px 10px;
+    }
+
+    [class*=inner]{
+        width: 100% !important;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    /*--------------- HEADER ---------------*/
+    header{
+        .header-inner{
+            padding: 0 20px;
+            .logo-search{
+                gap: 5px;
+                justify-content: space-between;
+                .login-register-buttons{
+                    font-size: 13px;
+                    padding: 5px;
+                    margin-left: 0;
+                }
+                .search{
+                    width: 350px;
+                    input[type="text"]{
+                        padding: 11px;
+                        text-indent: 10px;
+                    }
+                }
+            }
+            
+        }
+        .mega-navi{
+            .mega-navi-inner{
+                padding: 22px 10px 28px;
+            }
+        }
+    }
+
+    /*######### Front page : index.html #########*/
+    /* Section : front Slider */
+    .front-slider{
+        .front-slider-items{
+            .front-slider-item{
+                .front-slider-item-wrap{
+                    width: 100%;
+                    .desc{
+                        margin: 0 30px;
+                        h1{
+                            font-size: 1.8em;
+                            white-space: nowrap;
+                            line-height: 1.4em;
+                        }
+                        span{
+
+                        }
+                    }
+                    .pic{
+                        overflow: hidden;
+                        img{
+                            height: 250px;
+                            transform: translateX(-10px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Section : category-shortcut */
+    .category-shortcut{
+        .category-shortcut-inner{
+            .category-shortcut-inner-item{
+                .category-shortcut-inner-items{
+                        a{
+                            justify-content: flex-start;
+                            padding-top: 20px;
+                            gap: 15px;
+                            span{
+                                text-align: center;
+                                line-height: 1.2em;
+                            }
+                        }
+                }
+            }
+        }
+    }
+
+    /* Section : focus-class */
+    .focus-class{
+        .focus-class-inner{
+            .focus-class-content{
+                .focus-class-items{
+                    .focus-class-item{
+                        .overview{
+                            .class-price{
+                                font-size: 13px;
+                            }
+                        }    
+                    }
+                }     
+            }
+        }
+    }
+
+    /* Section : best-class */
+    .best-class{
+        .best-class-inner{
+            .best-class-content{
+                .best-class-wrap{
+                    flex-direction: column-reverse;
+                    .invite-banner{
+                        display: none;
+                    }
+                    .invite-banner-tablet{
+                        display: block;
+                        text-align: center;
+                        background-color: #aae8f3;
+                        border-radius: 10px;
+                        a{
+                            img{
+                                
+                            }
+                        }
+                    }
+                    .bast-class-items-outer{
+                        .bast-class-item{
+                            .overview{
+                                margin-top: 0;
+                                .class-price{
+                                    margin-top: 0;
+                                    font-size: .9em;
+                                    word-spacing: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Section : early-bird */
+    .early-bird{
+        .early-bird-inner{
+            .early-bird-content{
+                .coundown-wrap{
+
+                }
+            }
+            .early-bird-banner{
+                padding: 20px;
+                .banner-about{
+                    font-size: 1.6em;
+                    line-height: 1.4em;
+                }
+            }
+        }
+    }
+
+    /* Section : blog */
+    .blog{
+        .blog-inner{
+            .blog-content{
+                .blog-items{
+                    .blog-item{
+                        .thum{
+                            height: 160px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Section : slogan */
+    .slogan{
+        .slogan-inner{
+            .slogan-content{
+                h1{
+                    font-size: 1.5em;
+                }
+                span{
+                    font-size: 1.3em;
+                }
+            }
+        }
+    }
+
+    /* Section : tip-tech */
+    .tip-tech{
+        .tip-tech-inner{
+            .tip-tech-content{
+                .tip-tech-wrap{
+                    .tip-tech-items{
+                        .tip-tech-item{
+                            .tip-tech-info{
+
+                            }
+                            .thum{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Footer */
+    .footer{
+        .footer-inner{
+            .lnb-wrap{
+                gap: 10px;
+            }
+            .copyright-wrap{
+                address{
+                    ul{
+                        flex-wrap: wrap;
+                        li{
+                            white-space: nowrap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /*######### Category Main : category-main.html #########*/
+    .category-class{
+        .cotegory-class-inner{
+            .category-class-detail{
+                .category-shortcut-btn-group{
+                    .btn-shortcut{
+                        margin: 0 3px 10px 0;
+                    }
+                }
+            }
+        }
+    }
+
+    /*######### Category Main : Take course & Cart: take-course.html #########*/
+    .take-course{
+        .take-course-inner{
+            flex-direction: column;
+        }
+    }
+
+    /*######### Class Detail : class-detail.html #########*/
+    .class-detail-img{
+        .class-detail-img-inner{
+            height: 350px;
+            .heading{
+                margin-left: 20px;
+                h1{
+                    font-size: 1.5em;
+                    line-height: 1.5em;
+                }
+                p{
+                    font-size: 1em;
+                }
+            }
+            .cover-img{
+                img{
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    .class-datail-desc{
+        .class-datail-desc-inner{
+            .class-datail-desc-content{
+                flex-direction: column-reverse;
+                .detail-info{
+                    .class-detail-nav{
+                        top: 115px;
+                    }
+                    .class-introduce{
+                        * img{
+                            width: 100%;
+                        }
+                    }
+                }
+                .class-detail-slidebar{
+                    position: static;
+                    .class-required-info{
+                        .class-detail-sidebar-wrap{
+                            .overview{
+                                .class-price{
+                                    justify-content: flex-end;
+                                    gap: 20px;
+                                }
+                                .class-installment{
+                                    .installment-info{
+                                        margin-left: 13px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }   
+            }
+        }
+    }
+
+
+
+
+
+
+}
