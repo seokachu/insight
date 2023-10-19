@@ -863,6 +863,9 @@ body.active {
     font-size: 0.85em;
     width: 100px;
   }
+  .category-class .cotegory-class-inner .cate-class-sort .btn-earlybird {
+    white-space: nowrap;
+  }
   .category-class .cotegory-class-inner .category-class-wrap {
     overflow-x: hidden;
   }
