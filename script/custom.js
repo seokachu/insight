@@ -1,6 +1,6 @@
 $(function(){
     /* Include Files */
-    $('.header-include').load('https://seokachu.github.io/include/header.html',function(){
+    $('.header-include').load('./include/header.html',function(){
         
         //브라우저가 로드될때 (실시간 반영X)
         $(window).resize(function(){
