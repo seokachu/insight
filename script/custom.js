@@ -33,7 +33,7 @@ $(function(){
 
                 //navi mobile
                 $('.mega-navi-item b').click(function(){
-                    $('.mega-navi-item-wrap').slideUp(200);
+                    $('.mega-navi-item-wrap').stop().slideUp(200);
                     $(this).next().stop().slideDown(200);
                     $(this).addClass('active');
                     $(this).parent().siblings().children('b').removeClass('active');
