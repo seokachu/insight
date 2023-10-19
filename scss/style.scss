@@ -1135,11 +1135,12 @@ section.slogan{
             .btn-paging-group{
                 margin: 0 10px;
                 .btn-paging{
+                    padding: 3px 5px;
                     &.active{
                         background-color: $dark-black;
                         color: $white;
                         border-radius: 5px;
-                        padding: 3px;
+                        padding: 5px;
                     }
                 }
             }
