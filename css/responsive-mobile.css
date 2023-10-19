@@ -599,7 +599,7 @@ body.active {
     margin: 12px 0;
   }
   .front-slider .front-slider-items .front-slider-item .front-slider-item-wrap .pic img {
-    height: 45%;
+    height: 100%;
     transform: translateY(23px);
   }
   /* Section : category-shortcut */
@@ -871,6 +871,9 @@ body.active {
   }
   .category-class .cotegory-class-inner .category-class-wrap .focus-class-items {
     margin-bottom: 20px;
+  }
+  .category-class .paging {
+    margin-top: 30px;
   }
   /*######### Category Main : Take course & Cart: take-course.html #########*/
   .take-course {

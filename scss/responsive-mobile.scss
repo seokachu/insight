@@ -254,7 +254,7 @@ body.active{
                     }
                     .pic{
                         img{
-                            height: 45%;
+                            height: 100%;
                             transform: translateY(23px);
                         }
                     }
@@ -604,6 +604,9 @@ body.active{
                     margin-bottom: 20px;
                 }
             }
+        }
+        .paging{
+            margin-top: 30px;
         }
     }
 

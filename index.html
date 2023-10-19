@@ -138,7 +138,7 @@
                     </div>
                 </div>
                 <div class="gnb">
-                    <a class="trigger" href="html/category-main.html"><span>전체 카테고리</span></a>
+                    <a class="trigger" href=""><span>전체 카테고리</span></a>
                     <a href="html/category-main.html">베스트 클래스</a>
                     <a href="html/category-main.html">이벤트</a>
                     <a href="html/category-main.html">새로운 클래스</a>
@@ -1148,6 +1148,134 @@
                 setCookie('PortfolioPopup', 'Main', 1);
                 myPopup.style.display = 'none';
             });
+
+
+
+
+        /*--------- header -----------*/
+        //브라우저가 로드될때 (실시간 반영X)
+        $(window).resize(function(){
+            var trigger = $('header .gnb .trigger');
+            var nav = $('.mega-navi');
+
+            if($(this).innerWidth() > 767){
+                //pc navi
+                trigger.click(function(e){
+                    e.preventDefault();
+                    $(this).toggleClass('active');
+                    nav.stop().slideToggle(300);
+                });
+                    $('section').click(function(){
+                    nav.stop().slideUp();
+                });
+        
+            }else if($(this).innerWidth() < 767){
+
+                //mobile navi
+                trigger.click(function(e){
+                    e.preventDefault();
+                    nav.stop().animate({'left' : 0},300);
+                });
+
+                //close Btn
+                $('section, .btn-mega-navi-close').click(function(){
+                    nav.stop().animate({'left': -300},300);
+                });
+
+                //navi mobile
+                $('.mega-navi-item b').click(function(){
+                    $('.mega-navi-item-wrap').slideUp(200);
+                    $(this).next().stop().slideDown(200);
+                    $(this).addClass('active');
+                    $(this).parent().siblings().children('b').removeClass('active');
+                });
+
+                /* slick responsive header gnb */
+                var slider = $('.gnb');  	
+                var slickOptions = { 		
+                    dots: false,
+                    arrows:false,
+                    infinite:false,
+                    speed: 300,
+                    slidesToShow: 1,
+                    slidesToScroll: 3,
+                    centerMode: false,
+                    variableWidth: true
+                };  
+
+                var viewportWidth = $(this).innerWidth();
+                    if(viewportWidth < 767) { 			
+                        slider.not('.slick-initialized').slick(slickOptions); 		
+                    }else{ 	
+                        slider.slick('unslick');
+                    } 
+            }
+        }).resize();
+
+
+        /* login */
+        var loginPw = $('.login-field .toggle-pw');
+
+        loginPw.click(function(){
+            //toggle icon shape
+            $(this).toggleClass('bi-eye');
+            //toggle input type = text 변경
+            var inputType = $(this).parent().children('input').attr('type');
+            
+            if(inputType == 'password'){
+                $(this).parent().children('input').attr('type','text');
+            }else{
+                $(this).parent().children('input').attr('type','password');
+            }
+        });
+
+        /* header login modal */
+        var loginBtn = $('.btn-login, .login-member a');
+        var loginOverlay = $('.member-login-overlay');
+        var closeBtn = $('.member-login-overlay .btn-modal-close');
+
+        loginBtn.click(function(e){
+            e.preventDefault();
+            loginOverlay.fadeIn();
+            $('body').addClass('active');
+        });
+
+        closeBtn.click(function(){
+            loginOverlay.fadeOut();
+            $('body').removeClass('active');
+        });
+
+
+        /* After login header ui */
+        $('.btn-menber-primary').click(function(){
+            $('.member-login-overlay').fadeOut();
+            $('.user-alarm').show();
+            $('.login-register-buttons').hide();
+            $('body').removeClass('active');
+        });
+
+
+        /*--------- footer -----------*/
+         /* footer lnb */
+        $('.link-item-title').click(function(){
+            $(this).next().stop().slideToggle(200);
+            $(this).toggleClass('active');
+        });
+
+        $('.company-info-trigger').click(function(){
+            $(this).next().stop().slideToggle(200);
+            $(this).toggleClass('active');
+        });
+
+
+
+
+
+
+
+
+
+
     </script>
 </body>
 </html>
