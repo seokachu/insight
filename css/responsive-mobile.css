@@ -455,7 +455,7 @@ body.active {
     color: #FFFFFF;
     background-color: transparent;
     font-size: 20px;
-    margin: 20px 15px;
+    margin: 20px 10px;
   }
   header .header-inner .mega-navi .mega-navi-inner {
     padding: 30px 0 28px;
@@ -571,10 +571,13 @@ body.active {
     padding: 12px;
     font-size: 14px;
   }
+  .member-login-overlay .member-login .btn-modal-close {
+    right: 10px;
+  }
   /* Front Event Banner */
   .front-event-banner {
     width: 300px;
-    bottom: 20px;
+    bottom: 80px;
     right: 50%;
     transform: translateX(50%);
   }
